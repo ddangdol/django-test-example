@@ -5,9 +5,11 @@ on: [pull_request]
 jobs:
   lint:
     runs-on: ubuntu-latest
+    env:
+      INPUT_BLACK_ARGS: "--check"
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-python@v2
       - uses: psf/black@stable
         with:
-          args: "--check"
+          args: ". --check"
