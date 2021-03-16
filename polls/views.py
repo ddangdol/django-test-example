@@ -20,20 +20,18 @@ def example1():
             200,
             300,
             9876543210,
-            'This is a long string that goes on'],
+            'This is a long string that goes on',
+        ],
         'more': {
             'inner': 'This whole logical line should be wrapped.',
-            some_tuple: [
-                1,
-                20,
-                300,
-                40000,
-                500000000,
-                60000000000000000]}}
+            some_tuple: [1, 20, 300, 40000, 500000000, 60000000000000000],
+        },
+    }
     return (some_tuple, some_variable)
 
 
-def example2(): return ('' in {'f': 2}) in {'has_key() is deprecated': True}
+def example2():
+    return ('' in {'f': 2}) in {'has_key() is deprecated': True}
 
 
 class Example3(object):
