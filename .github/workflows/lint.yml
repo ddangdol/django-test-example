@@ -6,7 +6,7 @@ jobs:
   lint:
     runs-on: ubuntu-latest
     env:
-      BLACK_ARGS: "--check"
+      black_args: "--check"
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-python@v2
