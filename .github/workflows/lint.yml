@@ -10,6 +10,6 @@ jobs:
       - uses: actions/setup-python@v2
       - uses: psf/black@stable
         env:
-          INPUT_BLACK_ARGS: "--check"
+          INPUT_BLACK_ARGS: --check
         with:
           args: ". --check"
