@@ -11,4 +11,4 @@ jobs:
       - uses: psf/black@stable
         with:
           args: ". --check"
-          black_args: "-S"
+          INPUT_BLACK_ARGS: "-S"
