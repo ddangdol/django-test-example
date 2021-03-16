@@ -10,5 +10,4 @@ jobs:
       - uses: actions/setup-python@v2
       - uses: psf/black@stable
         with:
-          args: ". --check"
-          INPUT_BLACK_ARGS: "-S"
+          args: "--check"
